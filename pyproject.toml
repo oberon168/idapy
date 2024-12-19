@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=64.0.0", "wheel"]
+requires = ["setuptools>=64.0.0", "wheel", "build"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "idapy"
-version = "0.1.2"
+version = "0.1.5"
 description = "Interactive Data Analysis in Python"
 authors = [
     { name = "Oberon Leung", email = "ob_001@hotmail.com" }

@@ -1,0 +1,5 @@
+# MANIFEST.in
+include src/describe.py
+include src/__init__.py
+prune test/
+prune docs/

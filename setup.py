@@ -2,12 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='idapy',
-    version='0.1.2',
-    packages=find_packages(),
+    version='0.1.5',
+    packages=find_packages(where='src'), 
+    package_dir={'':'src'},
     install_requires=[
-        'numpy>=2.0.2', 
-        'pandas>=2.2.3',
-        'cupy>=13.3.0'
+        'numpy', 
+        'pandas',
+        'cupy'
         # List your library's dependencies here
     ],
     author='Oberon Leung',
@@ -19,5 +20,6 @@ setup(
         'License :: Apache License 2.0',
         'Operating System :: OS Independent',
     ],
-    python_reqyures='>=3.10'
+    python_requires='>=3.6',
+    include_package_data=True,
 )
