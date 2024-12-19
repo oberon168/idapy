@@ -9,7 +9,6 @@ setup(
         'numpy', 
         'pandas',
         'cupy'
-        # List your library's dependencies here
     ],
     author='Oberon Leung',
     author_email='ob_001@hotmail.com',
@@ -20,6 +19,6 @@ setup(
         'License :: Apache License 2.0',
         'Operating System :: OS Independent',
     ],
-    python_requires='>=3.6',
+    python_requires='>=3.10',
     include_package_data=True,
 )

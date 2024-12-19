@@ -14,3 +14,5 @@ dependencies = [
     "pandas",
 	"cupy"
 ]
+requires-python = ">=3.10"
+dynamic = ["classifiers"]
