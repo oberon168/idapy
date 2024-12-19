@@ -1,4 +1,7 @@
 venv/
 build/
 docs/.ipynb_checkpoints/
+__pycache__/
+idapy.egg-info/
 *.bat
+.ipynb_checkpoints
