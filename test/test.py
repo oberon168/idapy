@@ -1,6 +1,9 @@
-# describe.py
 import time
+import matplotlib.pyplot as plt
 import pandas as pd
+from sklearn import datasets
+
+pd.options.display.float_format = '{:.3f}'.format
 
 def describe(xdata, moments=False, quartiles=False, test=0):
     # quartiles add median and quartiles
@@ -21,4 +24,8 @@ def describe(xdata, moments=False, quartiles=False, test=0):
     end = time.time()
     print('sec:',end-start)
     return output
-
+	
+test_data = pd.DataFrame(datasets.load_diabetes().data, columns=datasets.load_diabetes().feature_names)
+test_target = pd.DataFrame(datasets.load_diabetes().target,columns=['prog'])
+print(test_data.shape)
+print(describe(test_data))
